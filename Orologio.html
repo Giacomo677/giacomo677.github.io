@@ -1,0 +1,59 @@
+
+<html lang="it">
+    <head>
+        <meta charset= "utf-8">
+        <meta name="viewpart" content="width=device-width, initial-scale=1">
+        <title>Orologio Analogico</title>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Eserzio 5</title>
+        <!--Metadati di p5.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+        <meta charset="utf-8" />
+        <style>
+            html, body { margin: 0; padding: 0; background-color: "red"}
+            canvas { display: block; }
+        </style>
+        <script>
+            function setup() {
+                createCanvas(400, 400);
+                angleMode(DEGREES);
+                 img = loadImage('orologio 2050.png');
+            }
+            function draw() {
+                background(220)
+                image(img, 0, 0);
+                var h = new Date().getHours();
+                var m = new Date().getMinutes();
+                var s = new Date().getSeconds();
+                fill(255, 255, 255);
+                circle(200, 200, 200);
+                fill(220, 10, 120);
+                arc(200, 200, 150, 150, (s*6)-93, (s*6)-86);
+                fill(100, 120, 220);
+                arc(200, 200, 125, 125, (m*6)-93, (m*6)-86);
+                fill(250, 50, 200);
+                 arc(200, 200, 100, 100, (h*30)-93, (h*30)-86);
+                 fill(220,140,70);
+                 textSize(16);
+                 fill(0,0,0);
+                 text("12",191,118);
+                 text("1",247,141);
+                 text("2",277,171);
+                 text("3",286,208);
+                 text("4",267,251);
+                 text("5",241,279);
+                 text("6",193,296);
+                 text("7",155,280);
+                 text("8",119,251);
+                 text("9",109,208);
+                 text("10",115,166);
+                 text("11",140,142);
+                 }
+        </script>
+    </head>
+    <body>
+        <h1>Esercizio su p5.js</h1>
+        <h2>Orologio Analogico</h2>
+    </body>
+<html>

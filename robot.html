@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Eserzio </title>
+
+        <!--Metadati di p5.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+        <meta charset="utf-8" />
+        <style>
+            html, body { margin: 0; padding: 0; }
+            canvas { display: block; }
+        </style>
+    </head>
+    <body>
+        <h1 >Esercizio su p5.js</h1>
+        <p>Esercizio del robot che si muove con il mouse</p>
+        <script>
+
+function setup() {
+            createCanvas(600, 600);
+}
+            function draw() {
+            background(230);
+            fill(150,80,150)
+            square(mouseX,mouseY,100)      
+            fill(0,0,0)
+            line(mouseX+20,mouseY,mouseX,mouseY-40)      
+            fill(0,0,0)
+            line(mouseX+80,mouseY,mouseX+100,mouseY-40)      
+            fill(0,0,0)
+            circle(mouseX+20,mouseY+20,15)   
+            fill(0,0,0)
+            circle(mouseX+80,mouseY+20,15)     
+            fill(255,255,255)
+            rect(mouseX+20,mouseY+60,60,26)         
+            fill(0,0,0)
+            line(mouseX+40,mouseY+60,mouseX+40,mouseY+86)           
+            fill(0,0,0)
+            line(mouseX+60,mouseY+60,mouseX+60,mouseY+86)      
+            fill(150,80,150)
+            rect(mouseX+35,mouseY+100,30,20)   
+            fill(150,80,150)
+            rect(mouseX-10,mouseY+120,120,160)        
+            fill(150,80,150)
+            rect(mouseX-35,mouseY+125,25,80)           
+            fill(0,0,0)
+            arc(mouseX-20,mouseY+210,37,37,90,270)            
+            fill(150,80,150)
+            rect(mouseX+110,mouseY+125,25,80)        
+            fill(0,0,0)
+            arc(mouseX+120,mouseY+205,37,37,160,360)            
+            fill(150,80,150)
+            rect(mouseX,mouseY+280,25,100)
+            fill(150,80,150)
+            rect(mouseX+80,mouseY+280,25,100)
+            fill(0,0,0)
+            ellipse(mouseX+10,mouseY+380,40,10)  
+            fill(0,0,0)
+            ellipse(mouseX+90,mouseY+380,40,10)
+            }
+        </script>
+    </body>
